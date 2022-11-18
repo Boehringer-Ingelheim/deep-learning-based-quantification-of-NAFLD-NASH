@@ -37,6 +37,7 @@ ground_truth.csv           # Table with pathologist scores
 Nomenclature: _id_x_y.png_. Where x and y are the locations on the whole slide scan and id is a slide id.
 
 Example: 114_10_19.png
+
 <img src="fig/114_10_19.png" alt="114_10_19.png" width="200"/>
 
 2. Store the tiles to be analyzed under ./data/.
@@ -61,6 +62,14 @@ This will generate results as csv files (per tile and score and per slide).
 
 ## (Optional): Train CNNs (classification of tiles)    
 
+Edit _train_CNN.py_
+
+```
+python _train.py -c _train_CNN.yaml
+```
+
 ## (Optional): Train scoring ANNs (aggregate tile results to a single score)
+
+
 
 
