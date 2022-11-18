@@ -26,4 +26,10 @@ Unzip in the identical folders as in the git & osf repo.
 ground_truth.csv           # Table with pathologist scores
 ...
 
+## Analyze a new dataset
+
+## Optional step: Train CNNs (classification of tiles)
+
+## Optional step: Train ANNs (aggregate tile results to a single score)
+
 
