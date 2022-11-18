@@ -12,7 +12,7 @@ The method analyzes microscopy images of human liver biopsies stained in Masson'
 
 Download data from: https://osf.io/8e7hd/
 
-Unzip in the identical folders as in the git & osf repo.
+Create a folder structure as below. Unzip in the identical folders as in the osf repo. 
 
 ```bash
 ├── model                  # Pretrained TF / Keras models
@@ -24,12 +24,31 @@ Unzip in the identical folders as in the git & osf repo.
     ├── fibrosis
     ├── result    
 ground_truth.csv           # Table with pathologist scores
+├── data                   # Data to analyze (not provided)
 ...                        # (This repo)
 ```
 
 ## Analyze a new dataset
 
-## (Optional): Train CNNs (classification of tiles)
+Requirements: A dataset for example located under ./data/.
+
+The structure shold be as follows:
+
+```bash
+├── ./data/
+    ├── tiles/tiles     # Tiles with 299px² at 0.44 µm/px resolution.
+    ├── tiles_big/tiles # Tiles with 299px² at 1.32 µm/px resolution.
+```
+
+Filenames should have the following nomenclature: slideid_x_y.png
+Where x and y are the locations on the whole slide scan.
+
+Example: 114_10_19.png
+![image](fig/114_10_19.png)
+
+Edit classify_Kleiner_score_ANN.yaml to specify the location of models, and in particular the 
+
+## (Optional): Train CNNs (classification of tiles)    
 
 ## (Optional): Train scoring ANNs (aggregate tile results to a single score)
 
