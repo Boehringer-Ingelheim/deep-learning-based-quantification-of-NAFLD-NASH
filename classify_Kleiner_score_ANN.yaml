@@ -1,0 +1,37 @@
+models:
+    # Path where the .h5 file with the CNN weights are located
+    ballooning_model:   "./model/HS_Liver_ballooning_model_PT_V0.41.h5"
+    inflammation_model: "./model/HS_Liver_inflammation_model_PT_V0.6.h5"
+    steatosis_model:    "./model/HS_Liver_steatosis_model_IN_V1.2.h5"
+    fibrosis_model:     "./model/HS_Liver_fibrosis_model_PT_V0.20.h5"
+
+Scoring_ANN:
+    # (1) Trained ANN model weights (.h5)
+    # (2) Min max scaler to scale input features
+    balloning_ANN:    "./model/HS_Liver_ballooning_model_PT_V0.41_ANN.h5"
+    balloning_scaler:    "./model/HS_Liver_ballooning_model_PT_V0.41.scaler"
+
+    inflammation_ANN:    "./model/HS_Liver_inflammation_model_PT_V0.6_ANN.h5"
+    inflammation_scaler:    "./model/HS_Liver_inflammation_model_PT_V0.6.scaler"
+
+    steatosis_ANN:    "./model/HS_Liver_steatosis_model_IN_V1.2_ANN.h5"
+    steatosis_scaler:    "./model/HS_Liver_steatosis_model_IN_V1.2.scaler"
+
+    fibrosis_ANN:    "./model/HS_Liver_fibrosis_model_PT_V0.20_ANN.h5"
+    fibrosis_scaler:    "./model/HS_Liver_fibrosis_model_PT_V0.20.scaler"
+    
+tiles:
+    # Path where the tiles are located
+    # Tiles are expected in a sub folder below this folder (e.g. ./tiles/)
+    
+    # Fibrosis tiles, 299x299, 1.32 µm/px
+    fibrosis_tile_path: "./data/test/tiles_big/"
+    # NAS tiles, 299x299, 0.44 µm/px
+    NAS_tile_path: "./data/test/tiles/"
+    
+results:
+    # Path where results are written to
+    results_path: "./data/test/"
+
+    # Name of experiment
+    experiment_name: "test_experiment"
