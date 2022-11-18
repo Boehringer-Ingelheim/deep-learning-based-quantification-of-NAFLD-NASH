@@ -8,6 +8,10 @@ The method analyzes microscopy images of human liver biopsies stained in Masson'
 
 ![image](fig/Fig1.png)
 
+## Requirements
+
+The code in the repository was tested under Python 3.64 with a NVidia GTX1080 GPU with 11GB. Packages' versions are listed in the requirements.txt.
+
 ## Datasets
 
 Download data from: https://osf.io/8e7hd/
@@ -61,7 +65,7 @@ python classify_Kleiner_score_ANN.py -c classify_Kleiner_score_ANN.yaml
 
 This will generate results as csv files (per tile and score and per slide).
 
-## (Optional): Train CNNs (classification of tiles)    
+## (Optional) Train CNNs (classification of tiles)    
 
 Edit _train_CNN.py_
 
@@ -69,7 +73,7 @@ Edit _train_CNN.py_
 python train.py -c train_CNN.yaml
 ```
 
-## (Optional): Train scoring ANNs (aggregate tile results to a single score)
+## (Optional) Train scoring ANNs (aggregate tile results to a single score)
 
 This is available as jupyter notebook.
 
