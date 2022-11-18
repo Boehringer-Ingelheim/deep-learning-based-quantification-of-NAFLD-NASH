@@ -49,10 +49,12 @@ Example: 114_10_19.png
 The structure shold be as follows (assuming you work on project_X):
 
 ```bash
-├── ./data/
-    ├── /project_X
-        ├── tiles/tiles     # Tiles
-        ├── tiles_big/tiles # Big tiles
+├── data                 # All projects should be here
+    ├── project_X        # Folder of project_X
+        ├── tiles
+            ├──tiles     # Tiles are here
+        ├── tiles_big
+            ├──tiles     # Big tiles are here
 ```
 
 3. Edit _classify_Kleiner_score_ANN.yaml_ to specify the location of the training data and the model files
