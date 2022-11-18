@@ -85,10 +85,10 @@ The result are:
 - ANN weights file, e.g. _HS_Liver_steatosis_model_IN_V1.2_ANN.h5_ (make sure not to overwrite those)
 - Scaler files, e.g. _HS_Liver_steatosis_model_IN_V1.2.scaler_ for feature normalization.
 
-Example learning curve for fibrosis:
+Example learning curve for fibrosis (here: on all train data):
 
-<img src="fig/HS_Liver_fibrosis_model_PT_V0.20_ANN_lc_test.png" alt="114_10_19.png" width="200"/>
+<img src="fig/HS_Liver_fibrosis_model_PT_V0.20_ANN_lc_test.png" alt="114_10_19.png" width="400"/>
 
 And example fit to the fibrosis data (4x cv)
 
-<img src="fig/Combined_Train_Liver_fibrosis_model_PT_V0.20_Fibrosis_score.png" alt="114_10_19.png" width="200"/>
+<img src="fig/Combined_Train_Liver_fibrosis_model_PT_V0.20_Fibrosis_score.png" alt="114_10_19.png" width="400"/>
