@@ -15,16 +15,16 @@ Download data from: https://osf.io/8e7hd/
 Unzip in the identical folders as in the git & osf repo.
 
 ```bash
-├── ANN
+├── model                  # Pretrained TF / Keras models
+├── ANN                    # Optional data to train ANNs from features X
 ├── CNN                    # Training data for CNNs
     ├── steatosis
     ├── inflammation
     ├── ballooning
     ├── fibrosis
     ├── result    
-├── model                  # Pretrained TF / Keras models
 ground_truth.csv           # Table with pathologist scores
-...
+...                        # (This repo)
 ```
 
 ## Analyze a new dataset
