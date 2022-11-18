@@ -30,23 +30,34 @@ ground_truth.csv           # Table with pathologist scores
 
 ## Analyze a new dataset
 
-Requirements: A dataset for example located under ./data/.
+1. Create tiles of your whole slide scans
+    - Small tiles: 299px² at 0.44 µm/px
+    - Big tiles: 299px² at 1.32 µm/px 
 
-The structure shold be as follows:
+Nomenclature: _id_x_y.png_. Where x and y are the locations on the whole slide scan and id is a slide id.
+
+Example: 114_10_19.png
+<img src="fig/114_10_19.png" alt="114_10_19.png" width="200"/>
+
+2. Store the tiles to be analyzed under ./data/.
+
+The structure shold be as follows (assuming you work on project_X):
 
 ```bash
 ├── ./data/
-    ├── tiles/tiles     # Tiles with 299px² at 0.44 µm/px resolution.
-    ├── tiles_big/tiles # Tiles with 299px² at 1.32 µm/px resolution.
+    ├── /project_X
+        ├── tiles/tiles     # Tiles
+        ├── tiles_big/tiles # Big tiles
 ```
 
-Filenames should have the following nomenclature: slideid_x_y.png
-Where x and y are the locations on the whole slide scan.
+3. Edit _classify_Kleiner_score_ANN.yaml_ to specify the location of the training data and the model files
 
-Example: 114_10_19.png
-![image](fig/114_10_19.png)
+4. Run python:
+```
+python classify_Kleiner_score_ANN.py -c classify_Kleiner_score_ANN.yaml
+```
 
-Edit classify_Kleiner_score_ANN.yaml to specify the location of models, and in particular the 
+This will generate results as csv files (per tile and score and per slide).
 
 ## (Optional): Train CNNs (classification of tiles)    
 
