@@ -46,7 +46,7 @@ Example: 114_10_19.png
 
 2. Store the tiles to be analyzed under ./data/.
 
-The structure shold be as follows (assuming you work on project_X):
+The structure should be as follows (assuming you work on project_X):
 
 ```bash
 ├── data                 # All projects should be here
