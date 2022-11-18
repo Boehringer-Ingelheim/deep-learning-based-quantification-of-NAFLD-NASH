@@ -14,7 +14,7 @@ Download data from: https://osf.io/8e7hd/
 
 Unzip in the identical folders as in the git & osf repo.
 
-.
+```bash
 ├── ANN
 ├── CNN                    # Training data for CNNs
     ├── steatosis
