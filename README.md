@@ -31,6 +31,6 @@ ground_truth.csv           # Table with pathologist scores
 
 ## (Optional): Train CNNs (classification of tiles)
 
-## (Optional): Train ANNs (aggregate tile results to a single score)
+## (Optional): Train scoring ANNs (aggregate tile results to a single score)
 
 
