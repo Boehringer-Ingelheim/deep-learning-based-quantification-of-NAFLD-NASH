@@ -80,10 +80,10 @@ This will fit the ANNs (one ANN for each of the four scores).
 ANN_score_regression.ipynb
 ```
 
-The result are:
+The result are the following pairs per score (make sure not to overwrite the original ones during tests):
 
-- ANN weights file, e.g. _HS_Liver_steatosis_model_IN_V1.2_ANN.h5_ (make sure not to overwrite those)
-- Scaler files, e.g. _HS_Liver_steatosis_model_IN_V1.2.scaler_ for feature normalization.
+1. ANN weights file, e.g. _HS_Liver_steatosis_model_IN_V1.2_ANN.h5_
+2. Scaler files, e.g. _HS_Liver_steatosis_model_IN_V1.2.scaler_ for feature normalization.
 
 Example learning curve for fibrosis (here: on all train data):
 
