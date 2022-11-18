@@ -65,7 +65,7 @@ This will generate results as csv files (per tile and score and per slide).
 Edit _train_CNN.py_
 
 ```
-python _train.py -c _train_CNN.yaml
+python train.py -c train_CNN.yaml
 ```
 
 ## (Optional): Train scoring ANNs (aggregate tile results to a single score)
