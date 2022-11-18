@@ -54,6 +54,7 @@ The structure shold be as follows (assuming you work on project_X):
 3. Edit _classify_Kleiner_score_ANN.yaml_ to specify the location of the training data and the model files
 
 4. Run python:
+
 ```
 python classify_Kleiner_score_ANN.py -c classify_Kleiner_score_ANN.yaml
 ```
